@@ -69,7 +69,6 @@
 |members|string|null: false|
 |comment|text|null: false|
 |highway|string|null: false|
-|string|null: false|
 |endtime|string|null: false|
 |overwork|string|null: false|
 |travel_cost|string|null: false|
