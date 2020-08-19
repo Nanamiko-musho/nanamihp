@@ -5,7 +5,7 @@ class Post < ApplicationRecord
 
   def self.search(search)
     if search
-      Post.where('constructionsite LIKE(?) OR writer LIKE(?)' , "%#{search}%", "%#{search}%")
+      Post.where('constructionsite LIKE(?) OR writer LIKE(?) OR created_at LIKE(?)' , "%#{search}%", "%#{search}%", "%#{search}%")
     else
       Post.all
     end

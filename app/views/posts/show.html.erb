@@ -16,7 +16,7 @@
       </div>
       <p class="show__text">作成日</p>
       <div class="show__title">
-        <%= @post.created_at %>
+        <%= @post.created_at.strftime("%Y-%m-%d")%>
       </div>
       <p class="show__text">記入者</p>
       <div class="show__title">

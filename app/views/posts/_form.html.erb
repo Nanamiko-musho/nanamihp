@@ -12,12 +12,18 @@
           <p class="form__text">・記入者名 <strong class="form__text__assist">必須</strong></p>
           <%= form.text_field :writer, placeholder: :記入者, class: :form__title %>
           <p class="form__text">・業態 <strong class="form__text__assist">必須</strong></p>
-          <%= form.radio_button :industrytype, :"搬入" %>
-          <%= form.label :industrytype, "搬入", {value: :"搬入", style: "display: inline-block;"} %>
-          <%= form.radio_button :industrytype, :"施工" %>
-          <%= form.label :industrytype, "施工", {value: :"施工", style: "display: inline-block;"} %>
-          <%= form.radio_button :industrytype, :"その他" %>
-          <%= form.label :industrytype, "その他", {value: :"その他", style: "display: inline-block;"} %>
+          <p class="form__radio__button">
+            <%= form.radio_button :industrytype, :"搬入" %>
+            <%= form.label :industrytype, "搬入", {value: :"搬入", style: "display: inline-block;"} %><br>
+          </p>
+          <p class="form__radio__button">
+            <%= form.radio_button :industrytype, :"施工" %>
+            <%= form.label :industrytype, "施工", {value: :"施工", style: "display: inline-block;"} %><br>
+          </p>
+          <p class="form__radio__button">
+            <%= form.radio_button :industrytype, :"その他" %>
+            <%= form.label :industrytype, "その他", {value: :"その他", style: "display: inline-block;"} %>
+          </p>
           <p class="form__text">・作業者名(メンバー) <strong class="form__text__assist">必須</strong></p>
           <%= form.text_field :members, placeholder: :作業者名, class: :form__title %>
           <p class="form__text">・特記事項 <strong class="form__text__assist">必須</strong></p>
