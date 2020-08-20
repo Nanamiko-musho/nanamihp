@@ -27,7 +27,7 @@ a:active {
 .image {
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
+  margin: 20px;
   box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
 }
 .image__daihyo {
@@ -116,7 +116,7 @@ a:active {
 // explain
 
 .explain {
-  height:590px;
+  height:450px;
   background-color: #fff;
   width: 100%;
   &__title {
@@ -133,17 +133,21 @@ a:active {
   } &__body {
     display: flex;
   }&__left {
-    width: calc(100% - 60%);
+    width: calc(100% - 55%);
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-left: 70px;
   } &__left__title {
-    font-weight: bold;
-    font-size: 32px;
-    margin: 40px 0;
+    color: #364e96;
+    padding: 0.5em 0;
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+    margin: 25px 0;
+    font-size: 30px;
+    width: 90%;
   } &__left__text {
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 22px;
   } &__right {
     position: relative;
@@ -151,8 +155,8 @@ a:active {
     width: 430px;
     height: 300px;
     position: absolute;
-    top: 10px;
-    left: 80px;
+    top: 16px;
+    left: 15px;
     box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
   } &__image__second {
     width: 400px;
@@ -167,7 +171,7 @@ a:active {
 // sekou
 
 .sekou {
-  height:590px;
+  height:430px;
   background-color:#fff;
   width: 100%;
   &__title {
@@ -185,14 +189,14 @@ a:active {
     display: flex;
   } &__left {
     position: relative;
-    width: calc(100% - 60%);
+    width: calc(100% - 55%);
     margin-left: 70px;
   } &__image__one{
     width: 430px;
     height: 300px;
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 10px;
+    left: -22px;
     box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
   } &__image__second{
     width: 400px;
@@ -208,11 +212,14 @@ a:active {
     flex-direction: column;
     text-align: center;
   } &__right__title {
-    font-weight: bold;
-    font-size: 32px;
-    margin: 40px 0;
+    color: #364e96;
+    padding: 0.5em 0;
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+    margin: 20px 0;
+    font-size: 30px;
   } &__right__text {
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 22px;
   }
 }
@@ -251,10 +258,19 @@ a:active {
   } &__text {
     font-size: 22px;
     padding-bottom: 10px;
+    border-bottom: 6px double #000;
+  } &__comment {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   } &__explain {
-    width: 30%;
-    margin: 20px auto;
-    font-size: 22px;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
